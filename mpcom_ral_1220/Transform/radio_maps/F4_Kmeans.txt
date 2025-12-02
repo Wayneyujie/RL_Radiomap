@@ -1,0 +1,10 @@
+F4_Anchor1: x=58.5, y=8.8, Path Loss=-43.15dB
+F4_Anchor2: x=58.4, y=5.6, Path Loss=-47.77dB
+F4_Anchor3: x=58.0, y=6.5, Path Loss=-48.32dB
+F4_Anchor4: x=56.9, y=6.2, Path Loss=-88.55dB
+F4_Anchor5: x=57.4, y=6.2, Path Loss=-48.32dB
+F4_Anchor6: x=58.3, y=6.3, Path Loss=-43.58dB
+F4_Anchor7: x=56.2, y=8.7, Path Loss=-51.25dB
+F4_Anchor8: x=58.0, y=8.7, Path Loss=-45.27dB
+F4_Anchor9: x=58.7, y=7.7, Path Loss=-44.41dB
+F4_Anchor10: x=58.5, y=9.3, Path Loss=-45.48dB

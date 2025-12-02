@@ -1,0 +1,61 @@
+world:
+  height: 20
+  width: 20
+  step_time: 0.1
+  sample_time: 0.1
+  offset: [0, 0]
+
+robots:
+  # Robot 1
+  - type: 'robot_acker'
+    number: 1
+    state: [2, 2, 0.5, 0]  # Starting position [x, y, theta, velocity]
+    shape: [0.322, 0.22, 0.2, 0.22]
+    goal: [18, 18, 0]  # Target position
+    vel_type: 'steer'
+    vel_min: [-1, -1]
+    vel_max: [1, 1]
+    psi_limit: 1
+    arrive_mode: 'state'
+    edgecolor: 'b'
+    cooperative: True
+
+  # Robot 2
+  - type: 'robot_acker'
+    number: 1
+    state: [2.5727345728581117, 15.426524183087281, 0.5, 0]  # Starting position [x, y, theta, velocity]
+    shape: [0.322, 0.22, 0.2, 0.22]
+    goal: [16.76014577799741, 4.041015504354809, 0]  # Target position
+    vel_type: 'steer'
+    vel_min: [-1, -1]
+    vel_max: [1, 1]
+    psi_limit: 1
+    arrive_mode: 'state'
+    edgecolor: 'b'
+    cooperative: True
+
+  # Robot 3
+  - type: 'robot_acker'
+    number: 1
+    state: [8.065353017481005, 1.3725369077768859, 0.5, 0]  # Starting position [x, y, theta, velocity]
+    shape: [0.322, 0.22, 0.2, 0.22]
+    goal: [11.645561801223053, 19.206868861572673, 0]  # Target position
+    vel_type: 'steer'
+    vel_min: [-1, -1]
+    vel_max: [1, 1]
+    psi_limit: 1
+    arrive_mode: 'state'
+    edgecolor: 'b'
+    cooperative: True
+
+obstacles:
+  # Obstacles from map editor
+  - type: 'obstacle_polygon'
+    number: 1
+    distribute: {mode: 'manual',
+              states:
+              [[8.888133918092532, 5.997899808511953, 0]],
+              shapes: [
+              # Obstacle shape
+              [[0, 0], [2.2904441287293835, 0], [2.2904441287293835, 7.960961146457471], [0, 7.960961146457471]]
+              ] }

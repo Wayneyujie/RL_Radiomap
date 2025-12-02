@@ -1,0 +1,10 @@
+F19_Anchor1: x=59.3, y=12.5, Path Loss=-46.95dB
+F19_Anchor2: x=59.7, y=8.0, Path Loss=-50.13dB
+F19_Anchor3: x=52.1, y=12.3, Path Loss=-69.07dB
+F19_Anchor4: x=58.9, y=9.8, Path Loss=-44.35dB
+F19_Anchor5: x=60.5, y=10.0, Path Loss=-46.29dB
+F19_Anchor6: x=58.2, y=5.3, Path Loss=-59.13dB
+F19_Anchor7: x=60.7, y=9.5, Path Loss=-46.29dB
+F19_Anchor8: x=59.5, y=10.1, Path Loss=-43.59dB
+F19_Anchor9: x=58.1, y=10.3, Path Loss=-43.29dB
+F19_Anchor10: x=57.5, y=10.0, Path Loss=-50.27dB

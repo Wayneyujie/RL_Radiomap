@@ -1,0 +1,381 @@
+<scene version="2.1.0">
+
+<!-- Defaults, these can be set via the command line: -Darg=value -->
+
+
+<!-- Camera and Rendering Parameters -->
+
+	<integrator type="path" id="elm__0" name="elm__0">
+		<integer name="max_depth" value="12"/>
+	</integrator>
+
+<!-- Materials -->
+
+	<bsdf type="diffuse" id="mat-itu_marble" name="mat-itu_marble">
+		<rgb value="1.000000 0.000000 0.300000" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-itu_glass" name="mat-itu_glass">
+		<rgb value="1.000000 1.000000 1.000000" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-itu_metal" name="mat-itu_metal">
+		<rgb value="1.000000 0.000000 0.300000" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-itu_concrete" name="mat-itu_concrete">
+		<rgb value="1.000000 0.000000 0.300000" name="reflectance"/>
+	</bsdf>
+
+<!-- Emitters -->
+
+
+<!-- Shapes -->
+
+	<shape type="ply" id="mesh-Wall03" name="mesh-Wall03">
+		<string name="filename" value="meshes/Wall03.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Wall02" name="mesh-Wall02">
+		<string name="filename" value="meshes/Wall02.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Wall04" name="mesh-Wall04">
+		<string name="filename" value="meshes/Wall04.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Window01" name="mesh-Window01">
+		<string name="filename" value="meshes/Window01.ply"/>
+		<ref id="mat-itu_glass" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Wall01" name="mesh-Wall01">
+		<string name="filename" value="meshes/Wall01.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Window02" name="mesh-Window02">
+		<string name="filename" value="meshes/Window02.ply"/>
+		<ref id="mat-itu_glass" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Door" name="mesh-Door">
+		<string name="filename" value="meshes/Door.ply"/>
+		<ref id="mat-itu_glass" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Rail04" name="mesh-Rail04">
+		<string name="filename" value="meshes/Rail04.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Rail03" name="mesh-Rail03">
+		<string name="filename" value="meshes/Rail03.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Rail02" name="mesh-Rail02">
+		<string name="filename" value="meshes/Rail02.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Rail01" name="mesh-Rail01">
+		<string name="filename" value="meshes/Rail01.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-DownRail09" name="mesh-DownRail09">
+		<string name="filename" value="meshes/DownRail09.ply"/>
+		<ref id="mat-itu_metal" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-DownRail08" name="mesh-DownRail08">
+		<string name="filename" value="meshes/DownRail08.ply"/>
+		<ref id="mat-itu_metal" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-DownRail07" name="mesh-DownRail07">
+		<string name="filename" value="meshes/DownRail07.ply"/>
+		<ref id="mat-itu_metal" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-DownRail06" name="mesh-DownRail06">
+		<string name="filename" value="meshes/DownRail06.ply"/>
+		<ref id="mat-itu_metal" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-DownRail05" name="mesh-DownRail05">
+		<string name="filename" value="meshes/DownRail05.ply"/>
+		<ref id="mat-itu_metal" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-DownRail04" name="mesh-DownRail04">
+		<string name="filename" value="meshes/DownRail04.ply"/>
+		<ref id="mat-itu_metal" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-DownRail03" name="mesh-DownRail03">
+		<string name="filename" value="meshes/DownRail03.ply"/>
+		<ref id="mat-itu_metal" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-DownRail02" name="mesh-DownRail02">
+		<string name="filename" value="meshes/DownRail02.ply"/>
+		<ref id="mat-itu_metal" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-DownRail01" name="mesh-DownRail01">
+		<string name="filename" value="meshes/DownRail01.ply"/>
+		<ref id="mat-itu_metal" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Rail008" name="mesh-Rail008">
+		<string name="filename" value="meshes/Rail008.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Rail007" name="mesh-Rail007">
+		<string name="filename" value="meshes/Rail007.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Rail006" name="mesh-Rail006">
+		<string name="filename" value="meshes/Rail006.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Rail005" name="mesh-Rail005">
+		<string name="filename" value="meshes/Rail005.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-DownRail018" name="mesh-DownRail018">
+		<string name="filename" value="meshes/DownRail018.ply"/>
+		<ref id="mat-itu_metal" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-DownRail017" name="mesh-DownRail017">
+		<string name="filename" value="meshes/DownRail017.ply"/>
+		<ref id="mat-itu_metal" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-DownRail016" name="mesh-DownRail016">
+		<string name="filename" value="meshes/DownRail016.ply"/>
+		<ref id="mat-itu_metal" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-DownRail015" name="mesh-DownRail015">
+		<string name="filename" value="meshes/DownRail015.ply"/>
+		<ref id="mat-itu_metal" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-DownRail014" name="mesh-DownRail014">
+		<string name="filename" value="meshes/DownRail014.ply"/>
+		<ref id="mat-itu_metal" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-DownRail013" name="mesh-DownRail013">
+		<string name="filename" value="meshes/DownRail013.ply"/>
+		<ref id="mat-itu_metal" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-DownRail012" name="mesh-DownRail012">
+		<string name="filename" value="meshes/DownRail012.ply"/>
+		<ref id="mat-itu_metal" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-DownRail011" name="mesh-DownRail011">
+		<string name="filename" value="meshes/DownRail011.ply"/>
+		<ref id="mat-itu_metal" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-DownRail010" name="mesh-DownRail010">
+		<string name="filename" value="meshes/DownRail010.ply"/>
+		<ref id="mat-itu_metal" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Road_Sidewalk" name="mesh-Road_Sidewalk">
+		<string name="filename" value="meshes/Road_Sidewalk.ply"/>
+		<ref id="mat-itu_concrete" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Wall008" name="mesh-Wall008">
+		<string name="filename" value="meshes/Wall008.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Wall007" name="mesh-Wall007">
+		<string name="filename" value="meshes/Wall007.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Wall006" name="mesh-Wall006">
+		<string name="filename" value="meshes/Wall006.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Wall005" name="mesh-Wall005">
+		<string name="filename" value="meshes/Wall005.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Wall103" name="mesh-Wall103">
+		<string name="filename" value="meshes/Wall003.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Wall1002" name="mesh-Wall1002">
+		<string name="filename" value="meshes/Wall0002.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Wall1001" name="mesh-Wall1001">
+		<string name="filename" value="meshes/Wall0001.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh140" name="mesh-Mesh140">
+		<string name="filename" value="meshes/Mesh140.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh139" name="mesh-Mesh139">
+		<string name="filename" value="meshes/Mesh139.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh138" name="mesh-Mesh138">
+		<string name="filename" value="meshes/Mesh138.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh137" name="mesh-Mesh137">
+		<string name="filename" value="meshes/Mesh137.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh136" name="mesh-Mesh136">
+		<string name="filename" value="meshes/Mesh136.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh135" name="mesh-Mesh135">
+		<string name="filename" value="meshes/Mesh135.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh134" name="mesh-Mesh134">
+		<string name="filename" value="meshes/Mesh134.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh133" name="mesh-Mesh133">
+		<string name="filename" value="meshes/Mesh133.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh132" name="mesh-Mesh132">
+		<string name="filename" value="meshes/Mesh132.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh131" name="mesh-Mesh131">
+		<string name="filename" value="meshes/Mesh131.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh130" name="mesh-Mesh130">
+		<string name="filename" value="meshes/Mesh130.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh129" name="mesh-Mesh129">
+		<string name="filename" value="meshes/Mesh129.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh128" name="mesh-Mesh128">
+		<string name="filename" value="meshes/Mesh128.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh127" name="mesh-Mesh127">
+		<string name="filename" value="meshes/Mesh127.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh126" name="mesh-Mesh126">
+		<string name="filename" value="meshes/Mesh126.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh125" name="mesh-Mesh125">
+		<string name="filename" value="meshes/Mesh125.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh124" name="mesh-Mesh124">
+		<string name="filename" value="meshes/Mesh124.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh123" name="mesh-Mesh123">
+		<string name="filename" value="meshes/Mesh123.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh122" name="mesh-Mesh122">
+		<string name="filename" value="meshes/Mesh122.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh121" name="mesh-Mesh121">
+		<string name="filename" value="meshes/Mesh121.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh120" name="mesh-Mesh120">
+		<string name="filename" value="meshes/Mesh120.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh106" name="mesh-Mesh106">
+		<string name="filename" value="meshes/Mesh106.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh103" name="mesh-Mesh103">
+		<string name="filename" value="meshes/Mesh103.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh102" name="mesh-Mesh102">
+		<string name="filename" value="meshes/Mesh102.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh101" name="mesh-Mesh101">
+		<string name="filename" value="meshes/Mesh101.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh100" name="mesh-Mesh100">
+		<string name="filename" value="meshes/Mesh100.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh99" name="mesh-Mesh99">
+		<string name="filename" value="meshes/Mesh99.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh98" name="mesh-Mesh98">
+		<string name="filename" value="meshes/Mesh98.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh96" name="mesh-Mesh96">
+		<string name="filename" value="meshes/Mesh96.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh95" name="mesh-Mesh95">
+		<string name="filename" value="meshes/Mesh95.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh94" name="mesh-Mesh94">
+		<string name="filename" value="meshes/Mesh94.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh92" name="mesh-Mesh92">
+		<string name="filename" value="meshes/Mesh92.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Mesh91" name="mesh-Mesh91">
+		<string name="filename" value="meshes/Mesh91.ply"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Door01" name="mesh-Door01">
+		<string name="filename" value="meshes/Door01.ply"/>
+		<ref id="mat-itu_glass" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Door02" name="mesh-Door02">
+		<string name="filename" value="meshes/Door02.ply"/>
+		<ref id="mat-itu_glass" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Door03" name="mesh-Door03">
+		<string name="filename" value="meshes/Door03.ply"/>
+		<ref id="mat-itu_glass" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Door04" name="mesh-Door04">
+		<string name="filename" value="meshes/Door04.ply"/>
+		<ref id="mat-itu_glass" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-TV" name="mesh-TV">
+		<string name="filename" value="meshes/TV.ply"/>
+		<ref id="mat-itu_metal" name="bsdf"/>
+	</shape>
+
+
+	<!--newly added-->
+	<shape type="cube" id="my_added_wall_1">
+		<transform name="to_world">
+			<scale x="0.15" y="4.0" z="2.0"/>
+			
+			<translate x="5.0" y="5.0" z="2.0"/>
+		</transform>
+
+		<ref id="mat-itu_concrete"/>
+	</shape>
+
+	<shape type="cube" id="my_added_cabinet_1">
+		<transform name="to_world">
+			<scale x="1.0" y="0.5" z="1.0"/>
+			<translate x="10.0" y="-5.0" z="1.0"/>
+		</transform>
+
+		<ref id="mat-itu_metal"/>
+	</shape>
+
+	<shape type="cube" id="my_added_pillar_1">
+		<transform name="to_world">
+			<scale x="0.5" y="0.5" z="2.0"/>
+			<translate x="-8.0" y="8.0" z="2.0"/>
+		</transform>
+
+		<ref id="mat-itu_concrete"/>
+	</shape>
+
+<!-- Volumes -->
+
+</scene>

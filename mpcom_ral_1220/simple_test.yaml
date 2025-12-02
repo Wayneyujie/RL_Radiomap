@@ -1,0 +1,35 @@
+world:
+  height: 20
+  width: 20
+  step_time: 0.1
+  sample_time: 0.1
+  offset: [0,0]
+
+robots:
+  type: 'robot_acker'  # robot_omni, robot_diff, robot_acker
+  number: 1
+  state: [2, 2, 0.5, 0]  # Starting position [x, y, theta, velocity]
+  shape: [0.322, 0.22, 0.2, 0.22] # for acker (default)
+  goal: [18, 18, 0]  # Target position
+  vel_type: 'steer'
+  vel_min: [-1, -1]
+  vel_max: [1, 1]
+  psi_limit: 1
+  arrive_mode: 'state'
+  edgecolor: 'b'
+
+obstacles:
+  # Simple obstacles for open space testing
+  - type: 'obstacle_polygon'
+    number: 3
+    distribute: {mode: 'manual',
+              states:
+              [[8, 8, 0], [12, 5, 0], [5, 12, 0]],
+              shapes: [
+              # Square obstacle at center
+              [[0,0], [1, 0], [1, 1], [0, 1]],
+              # Rectangle obstacle
+              [[0,0], [0.8, 0], [0.8, 0.8], [0, 0.8]],
+              # Small square obstacle
+              [[0,0], [0.6, 0], [0.6, 0.6], [0, 0.6]]
+              ] }

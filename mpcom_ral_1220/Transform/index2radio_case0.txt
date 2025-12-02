@@ -1,0 +1,10 @@
+Rank 1: x=45, y=14, Path Loss=-51.14164733886719
+Rank 2: x=46, y=15, Path Loss=-51.778709411621094
+Rank 3: x=45, y=16, Path Loss=-51.82583236694336
+Rank 4: x=46, y=16, Path Loss=-51.987060546875
+Rank 5: x=47, y=11, Path Loss=-51.99034118652344
+Rank 6: x=55, y=8, Path Loss=-60.66139602661133
+Rank 7: x=48, y=20, Path Loss=-60.7845344543457
+Rank 8: x=51, y=20, Path Loss=-60.87415313720703
+Rank 9: x=58, y=5, Path Loss=-71.02315521240234
+Rank 10: x=51, y=2, Path Loss=-72.19493865966797
